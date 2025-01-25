@@ -99,7 +99,7 @@ sudo sed -i '/<\/build>/i \
             </plugin>\n\
         </plugins>' pom.xml
 
-mvn tomcat7:deploy
+# mvn tomcat7:deploy
 
 cd 
 

@@ -67,5 +67,7 @@ Configuración de Vagrant
 ![Comando 6](./fotos/comando6.png)
 ![Foto 8](./fotos/tomcat10.png)
 
+Para cambiar la aplcación que queremos desplegar deberemos comentar o descomentar el comando nvm tomcat7:deploy, según convenga y hacer un vagrant reload.
+
 
 
