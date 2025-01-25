@@ -100,3 +100,29 @@ sudo sed -i '/<\/build>/i \
         </plugins>' pom.xml
 
 mvn tomcat7:deploy
+
+cd 
+
+sudo apt-get update && sudo apt-get -y install git
+
+sudo git clone https://github.com/cameronmcnz/rock-paper-scissors.git
+
+cd rock-paper-scissors
+
+git checkout patch-1
+
+sudo sed -i '/<\/build>/i \
+        <plugins>\n\
+            <plugin>\n\
+                <groupId>org.apache.tomcat.maven</groupId>\n\
+                <artifactId>tomcat7-maven-plugin</artifactId>\n\
+                <version>2.2</version>\n\
+                <configuration>\n\
+                    <url>http://localhost:8080/manager/text</url>\n\
+                    <server>Tomcat</server>\n\
+                    <path>/piedrapapeltijeras</path>\n\
+                </configuration>\n\
+            </plugin>\n\
+        </plugins>' pom.xml
+
+# mvn tomcat7:deploy
