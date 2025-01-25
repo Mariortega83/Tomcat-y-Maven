@@ -32,7 +32,7 @@ roles="admin,admin-gui,manager,manager-gui"/>
 </tomcat-users>
 EOF'
 
-# Reiniciamos Tomcat
+
 
 # Permitir acceso remoto a los paneles de Tomcat
 sudo bash -c 'cat <<EOF > /usr/share/tomcat9-admin/host-manager/META-INF/context.xml
@@ -125,4 +125,4 @@ sudo sed -i '/<\/build>/i \
             </plugin>\n\
         </plugins>' pom.xml
 
-# mvn tomcat7:deploy
+mvn tomcat7:deploy
