@@ -20,11 +20,11 @@ Configuración de Vagrant
 - Crea un grupo y un usuario específicos para Tomcat.
 - Configura el usuario administrador en `tomcat-users.xml` con roles como `admin` y `manager`.
 - Permite el acceso remoto a los paneles administrativos mediante la configuración del archivo `context.xml`.
-![Comando 1](comando1.png)
+![Comando 1](./fotos/comando1.png)
 ![Foto 1](./fotos/tomcat2.png)
 
-![Comando 2](comando2.png)
-![Comando 3](comando3.png)
+![Comando 2](./fotos/comando2.png)
+![Comando 3](./fotos/comando3.png)
 
 ### 3. Administrador web
 ![Foto](./fotos/tomcat5.png)
